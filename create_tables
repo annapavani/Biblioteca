@@ -1,0 +1,25 @@
+CREATE TABLE membros (
+    cpf varchar(11) NOT NULL,
+    nome varchar(250) NOT NULL,
+    telefone varchar(13),
+    email varchar(250) NOT NULL,
+    PRIMARY KEY (cpf)
+);
+
+CREATE TABLE livros (
+    id int NOT NULL AUTO_INCREMENT,
+    titulo varchar(250) NOT NULL,
+    autoria varchar(250) NOT NULL,
+    editora varchar(250) NOT NULL,
+    disponivel boolean DEFAULT 1,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE emprestimos (
+    livroID int NOT NULL,
+    membroCPF varchar(11) NOT NULL,
+    dataEmprestimo timestamp DEFAULT CURRENT_TIMESTAMP,
+    renovacoes int DEFAULT 0,
+    FOREIGN KEY (membroCPF) REFERENCES membros(cpf),
+    FOREIGN KEY (livroID) REFERENCES livros(id)
+);

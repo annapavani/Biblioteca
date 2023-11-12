@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>770</width>
+    <height>493</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QToolButton" name="toolButton_addLivro">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>50</y>
+      <width>121</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolButton{
+background: rgb(85, 170, 0)
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Inserir Livro</string>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_addMembro">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>150</y>
+      <width>121</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolButton{
+background: rgb(170, 85, 255)
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Inserir Membro</string>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_livros">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>250</y>
+      <width>121</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolButton{
+background: rgb(85, 170, 255)
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Livros</string>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_membros">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>350</y>
+      <width>121</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolButton{
+background: rgb(255, 170, 0)
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Membros</string>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>601</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Triangular</enum>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Alugar Livro</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>571</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QWidget" name="horizontalWidget" native="true">
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+background-color:rgb(218,218,218)
+}</string>
+         </property>
+         <widget class="QLineEdit" name="lineEdit_livroID">
+          <property name="geometry">
+           <rect>
+            <x>9</x>
+            <y>49</y>
+            <width>361</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>Insira o ID do Livro</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>30</y>
+            <width>136</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QLabel" name="label_livro_nome">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Nome:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_livro_autoria">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Autoria:</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="horizontalWidget_2" native="true">
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+background-color:rgb(218,218,218)
+}</string>
+         </property>
+         <widget class="QLineEdit" name="lineEdit_CPF">
+          <property name="geometry">
+           <rect>
+            <x>9</x>
+            <y>49</y>
+            <width>361</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="placeholderText">
+           <string>Insira o CPF do Membro</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>20</y>
+            <width>121</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QLabel" name="label_membro_nome">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Nome:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_membro_contato">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Contato:</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QToolButton" name="toolButton_alugar">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QToolButton{
+background: rgb(255, 170, 127)
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Alugar</string>
+           </property>
+           <property name="toolButtonStyle">
+            <enum>Qt::ToolButtonTextUnderIcon</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Renovar/Devolver Livros</string>
+     </attribute>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QLineEdit" name="lineEdit_busca">
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+background-color:rgb(218,218,218)
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string>Buscar...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableWidget{
+background-color:rgb(218,218,218)
+}</string>
+        </property>
+        <column>
+         <property name="text">
+          <string>LivroID</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>CPF</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>DataAluguel</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Renovacoes</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Livro</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_renovar">
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QToolButton{
+background: rgb(255, 170, 127)
+}</string>
+          </property>
+          <property name="text">
+           <string>Renovar Aluguel</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_devolver">
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QToolButton{
+background: rgb(255, 170, 127)
+}</string>
+          </property>
+          <property name="text">
+           <string>Devolver Livro</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
